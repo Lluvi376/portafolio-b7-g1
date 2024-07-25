@@ -9,15 +9,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <!-- CABECERA DE MI PAGINA -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+        <!-- CABECERA DE MI PAGINA el navbar-expand-lg es para contraerse si la pagina la vemos en cel. Container-fluid hace que se expanda nuestro contenido del nav-->
+        <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">Lluvia</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,16 +27,17 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="#habilidades">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link text-white" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link text-white" href="#testimonios">Testimonios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link text-white" href="#contacto">Contactos</a>
                         </li>
                     </ul>
                 </div>
@@ -47,20 +50,17 @@
 
     <main>
         <section id="presentacion" class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                        width="700" height="500" loading="lazy">
-                </div>
+            <div class="row flex-lg-row align-items-center g-5 py-5">
                 <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Lluvia García
                     </h1>
-                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
-                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <p class="lead">Apasionada del dibujo, cine, música y lectura. A través del dibujo,
+                        capturo emociones; el cine me transporta a nuevos mundos; la música inspira mi creatividad;
+                        y la lectura amplía mi horizonte. Encantada de compartir estas pasiones con ustedes.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contáctame</button>
+                        <button type="button"
+                            class="btn btn-outline-secondary btn-lg px-4">nlluvia376@gmail.com</button>
                     </div>
                 </div>
             </div>
@@ -68,59 +68,43 @@
 
 
         <section id="habilidades" class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom">Columns with icons</h2>
+            <!-- Título de mi sección -->
+            <h2 class="pb-2 border-bottom">Habilidades</h2>
+            <!-- Contenedor de mis cartas -->
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                        <svg class="bi" width="1em" height="1em">
-                            <use xlink:href="#collection"></use>
-                        </svg>
+                        class="d-inline-flex align-items-center justify-content-center text-primary bg-gradient fs-2 py-2 px-3 rounded">
+                        <i class="bi bi-code-square"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                        sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
+                    <h3 class="fs-2 text-body-emphasis my-2">Desarrollo web</h3>
+                    <p>Conocimientos en HTML y CSS.</p>
                 </div>
+
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                        <svg class="bi" width="1em" height="1em">
-                            <use xlink:href="#people-circle"></use>
-                        </svg>
+                        class="d-inline-flex align-items-center justify-content-center text-primary bg-gradient fs-2 py-2 px-3 rounded">
+                        <i class="bi bi-people"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                        sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
+                    <h3 class="fs-2 text-body-emphasis my-2">Trabajo en equipo</h3>
+                    <p>Tengo experiencia trabajando en equipo y he logrado excelentes resultados en proyectos
+                        colaborativos. Mi capacidad
+                        para escuchar, comunicarme y coordinar con otros ha sido fundamental para alcanzar metas
+                        comunes.</p>
                 </div>
+
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                        <svg class="bi" width="1em" height="1em">
-                            <use xlink:href="#toggles2"></use>
-                        </svg>
+                        class="d-inline-flex align-items-center justify-content-center text-primary bg-gradient fs-2 py-2 px-3 rounded">
+                        <i class="bi bi-highlighter"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                        sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
+                    <h3 class="fs-2 text-body-emphasis my-2">Ilustración</h3>
+                    <p>Tengo conocimientos en Photoshop e Illustrator. Ambos programas son herramientas clave
+                        en mi proceso creativo, y los utilizo con confianza para desarrollar proyectos visuales de alta
+                        calidad.</p>
                 </div>
+
             </div>
         </section>
 
@@ -283,9 +267,9 @@
     </main>
 
 
-    
 
-    <footer class="py-3 my-4">
+
+    <footer id="contacto" class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
