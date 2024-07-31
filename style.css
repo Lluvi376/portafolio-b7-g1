@@ -3,6 +3,11 @@
     display: flex;
     justify-content: start;
     align-items: center;
+
+    background-image: url(assets/wallpaper3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .proyecto{
@@ -15,7 +20,19 @@
     background-image: url('assets/logonuevo.gif');
 }
 
+#proyecto-2{
+    background-image: url('assets/amapolas.jpg');
+}
+
+#proyecto-3{
+    background-image: url('assets/PortadaIlus.png');
+}
+
 /* Esta sirve para que los textos se vean */
 .text-shadow-1 {
     text-shadow: -2px 0px 6px rgba(0, 0, 0, 1);
+}
+
+.texto-gigante{
+    font-size: 80px;
 }

@@ -17,9 +17,9 @@
 <body>
     <header>
         <!-- CABECERA DE MI PAGINA el navbar-expand-lg es para contraerse si la pagina la vemos en cel. Container-fluid hace que se expanda nuestro contenido del nav-->
-        <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
+        <nav class="navbar fixed-top navbar-expand-lg bg-black" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand text-white" href="#">Lluvia</a>
+                <a class="navbar-brand text-danger-emphasis" href="#">Lluvia</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,17 +27,17 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page"
+                            <a class="nav-link active text-danger-emphasis" aria-current="page"
                                 href="#habilidades">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#proyectos">Proyectos</a>
+                            <a class="nav-link text-danger-emphasis" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#testimonios">Testimonios</a>
+                            <a class="nav-link text-danger-emphasis" href="#testimonios">Testimonios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#contacto">Contactos</a>
+                            <a class="nav-link text-danger-emphasis" href="#contacto">Contactos</a>
                         </li>
                     </ul>
                 </div>
@@ -49,18 +49,26 @@
 
 
     <main>
-        <section id="presentacion" class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row align-items-center g-5 py-5">
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Lluvia García
-                    </h1>
-                    <p class="lead">Apasionada del dibujo, cine, música y lectura. A través del dibujo,
-                        capturo emociones; el cine me transporta a nuevos mundos; la música inspira mi creatividad;
-                        y la lectura amplía mi horizonte. Encantada de compartir estas pasiones con ustedes.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contáctame</button>
-                        <button type="button"
-                            class="btn btn-outline-secondary btn-lg px-4">nlluvia376@gmail.com</button>
+        <section id="presentacion" class="container-fluid" data-bs-theme="dark">
+            <div class="container col-xxl-8 px-4 py-5 d-flex justify-content-start align-items-center">
+                <div class="row flex-lg-row align-items-center g-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="assets/klipartz.com.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                            width="600" height="400" loading="lazy">
+                    </div>
+                    <div class="col-lg-6 bg-black p-5">
+                        <h1 class="display-5 fw-bold text-danger-emphasis lh-1 mb-3">Lluvia Garcia</h1>
+                        <p class="lead text-white text-shadow-1">¡Hola! Soy una apasionada por la lectura, el cine y el
+                            dibujo.
+                            Encuentro inspiración en las historias que leo, en las películas que veo y en las imágenes
+                            que creo.
+                            Mi tiempo libre lo dedico a explorar estos intereses y a compartir mi entusiasmo con quienes
+                            me rodean.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-danger btn-lg px-4 me-md-2">Contáctame</button>
+                            <button type="button"
+                                class="btn btn-light btn-lg px-4 border-light">nlluvia376@gmail.com</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,7 +83,7 @@
 
                 <div class="feature col">
                     <div
-                        class="d-inline-flex align-items-center justify-content-center text-primary bg-gradient fs-2 py-2 px-3 rounded">
+                        class="d-inline-flex align-items-center justify-content-center text-danger-emphasis bg-gradient fs-2 py-2 px-3 rounded">
                         <i class="bi bi-code-square"></i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis my-2">Desarrollo web</h3>
@@ -84,7 +92,7 @@
 
                 <div class="feature col">
                     <div
-                        class="d-inline-flex align-items-center justify-content-center text-primary bg-gradient fs-2 py-2 px-3 rounded">
+                        class="d-inline-flex align-items-center justify-content-center text-danger-emphasis bg-gradient fs-2 py-2 px-3 rounded">
                         <i class="bi bi-people"></i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis my-2">Trabajo en equipo</h3>
@@ -96,7 +104,7 @@
 
                 <div class="feature col">
                     <div
-                        class="d-inline-flex align-items-center justify-content-center text-primary bg-gradient fs-2 py-2 px-3 rounded">
+                        class="d-inline-flex align-items-center justify-content-center text-danger-emphasis bg-gradient fs-2 py-2 px-3 rounded">
                         <i class="bi bi-highlighter"></i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis my-2">Ilustración</h3>
@@ -116,19 +124,57 @@
                 <div class="col">
                     <div id="proyecto-1"
                         class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-                        
+
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de google.</h3>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="d-flex align-items-center me-3">
                                     <i class="bi bi-code-square"></i>
-                                    <a href="http://" target="_blank" class="ps-3">URL</a>
+                                    <a href="https://github.com/Lluvi376/clon-google-b7-g1" target="_blank"
+                                        class="ps-3">Código</a>
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </div>
                 </div>
+
+                <div class="col">
+                    <div id="proyecto-2"
+                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Rotoscopia de Amapolas.</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <i class="bi bi-fast-forward-fill"></i>
+                                    <a href="https://www.youtube.com/watch?v=o_mYe4dy24s" target="_blank"
+                                        class="ps-3">Video</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="proyecto-3"
+                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ilustraciones.</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <i class="bi bi-brush"></i>
+                                    <a href="assets/Portafolio.pdf" target="_blank" class="ps-3">PDF
+                                        Ilustraciones</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
 
             </div>
 
@@ -136,57 +182,35 @@
 
 
         <section id="testimonios">
+            <h1 class="text-center my-5">Testimonios</h1>
+            <div id="myCarousel" class="carousel slide carousel-dark mb-6" data-bs-theme="dark" data-bs-ride="carousel">
 
-            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
-                        aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                        class="active" aria-current="true"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption text-start">
-                                <h1>Example headline.</h1>
-                                <p class="opacity-75">Some representative placeholder content for the first slide of the
-                                    carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="carousel-item active">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Another example headline.</h1>
-                                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                            </div>
-                        </div>
+                        <article class="container text-center">
+                            <img class="rounded-4" src="assets/walt-disney.webp" height="200" alt="Walt Disney">
+                            <h3 class="my-3">Walt Disney</h3>
+                            <p>"Su dibujo comienza a mejorar."</p>
+                        </article>
                     </div>
+
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption text-end">
-                                <h1>One more for good measure.</h1>
-                                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                            </div>
-                        </div>
+                        <article class="container text-center">
+                            <img class="rounded-4" src="assets/leorizzi.jpg" height="200" alt="Leo Rizzi">
+                            <h3 class="my-3">Leo Rizzi</h3>
+                            <p>"Su Rotoscopia es un muy buen trabajo."</p>
+                        </article>
                     </div>
+
+                    <div class="carousel-item">
+                        <article class="container text-center">
+                            <img class="rounded-4" src="assets/charlotte.webp" height="200" alt="Charlotte">
+                            <h3 class="my-3">Charlotte</h3>
+                            <p>"Sus Ilustraciones me gustan mucho."</p>
+                        </article>
+                    </div>
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -206,15 +230,40 @@
 
 
 
-    <footer id="contacto" class="py-3 my-4">
+    <footer id="contacto" class="bg-black py-3 mt-5" data-bs-theme="dark">
+        <p class="mt-5 text-danger-emphasis text-center texto-gigante">
+            <i class="bi bi-file-code-fill"></i>
+        </p>
+        <h4 class="text-danger-emphasis text-center my-3">"If you can dream it, you can do it"</h4>
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+
+            <li class="nav-item fs-1">
+                <a href="https://www.instagram.com/rain.colors0506?igsh=ajJ5cGZxdm1haGM3" target="_blank"
+                    class="nav-link px-2 text-body-secondary text-danger-emphasis">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+            <li class="nav-item fs-1">
+                <a href="https://github.com/Lluvi376" target="_blank"
+                    class="nav-link px-2 text-body-secondary text-danger-emphasis">
+                    <i class="bi bi-github"></i>
+                </a>
+            </li>
+            <li class="nav-item fs-1">
+                <a href="https://www.youtube.com/channel/UC08OXVY-udV7nsFCe0oPRTQ" target="_blank"
+                    class="nav-link px-2 text-body-secondary text-danger-emphasis">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </li>
+            <li class="nav-item fs-1">
+                <a href="https://www.tiktok.com/@maritza.navarrete4?is_from_webapp=1&sender_device=pc" target="_blank"
+                    class="nav-link px-2 text-body-secondary text-danger-emphasis">
+                    <i class="bi bi-tiktok"></i>
+                </a>
+            </li>
+
         </ul>
-        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+        <p class="text-center text-danger-emphasis">© 2024 Lluvia, TECHNOLOCHICAS PRO</p>
     </footer>
 
 
