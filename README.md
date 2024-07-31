@@ -6,7 +6,7 @@ Fue desarrollado con HTML, CSS y JS con el uso de el framework de UI, Bootstrap 
 
 La página es responsiva (adaptable a diferentes tamaños de pantalla) e incluye la presentación de la autora del proyecto.
 
-[Proyecto desplegado (https://timely-halva-737e86.netlify.app/)](https://timely-halva-737e86.netlify.app/)
+[Proyecto desplegado (https://timely-halva-737e86.netlify.app/)]([https://timely-halva-737e86.netlify.app/](https://timely-halva-737e86.netlify.app/))
 
 ## Secciones de mi sitio
 
