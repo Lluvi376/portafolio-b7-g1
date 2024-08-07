@@ -1,14 +1,54 @@
+body{
+    background-color: black;
+}
+h1{
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+h2{
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3{
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+h4 {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+}
+p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+#navegacion{
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+#pauseButton{
+    margin-left: 70px;
+} 
 #presentacion{
     height: 90vh;
     display: flex;
     justify-content: start;
     align-items: center;
 
-    background-image: url(assets/wallpaper3.jpg);
+    background-image: url(assets/wallpaper5.jpg!d);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 .proyecto{
     background-size: contain;

@@ -11,15 +11,23 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <!-- CABECERA DE MI PAGINA el navbar-expand-lg es para contraerse si la pagina la vemos en cel. Container-fluid hace que se expanda nuestro contenido del nav-->
-        <nav class="navbar fixed-top navbar-expand-lg bg-black" data-bs-theme="dark">
+        <nav id="navegacion" class="navbar fixed-top navbar-expand-lg bg-black" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand text-danger-emphasis" href="#">Lluvia</a>
+                <a class="navbar-brand pb-3" style="color: #f1948a;" href="#">Lluvia</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,17 +35,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active text-danger-emphasis" aria-current="page"
+                            <a class="nav-link active" style="color: #f1948a;" aria-current="page"
                                 href="#habilidades">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-danger-emphasis" href="#proyectos">Proyectos</a>
+                            <a class="nav-link" style="color: #f1948a;" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-danger-emphasis" href="#testimonios">Testimonios</a>
+                            <a class="nav-link" style="color: #f1948a;" href="#testimonios">Testimonios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-danger-emphasis" href="#contacto">Contactos</a>
+                            <a class="nav-link" style="color: #f1948a;" href="#contacto">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="pauseButton" class="btn btn-danger btn-lg px-2 me-md-2">Pausar</button>
                         </li>
                     </ul>
                 </div>
@@ -48,16 +59,12 @@
 
 
 
-    <main>
+    <main class="pb-3">
         <section id="presentacion" class="container-fluid" data-bs-theme="dark">
             <div class="container col-xxl-8 px-4 py-5 d-flex justify-content-start align-items-center">
                 <div class="row flex-lg-row align-items-center g-5">
-                    <div class="col-10 col-sm-8 col-lg-6">
-                        <img src="assets/klipartz.com.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                            width="600" height="400" loading="lazy">
-                    </div>
-                    <div class="col-lg-6 bg-black p-5">
-                        <h1 class="display-5 fw-bold text-danger-emphasis lh-1 mb-3">Lluvia Garcia</h1>
+                    <div class="col-lg-6 p-5">
+                        <h1 id="app" class="display-5 fw-bold text-danger-emphasis lh-1 mb-3">Lluvia Garcia</h1>
                         <p class="lead text-white text-shadow-1">¡Hola! Soy una apasionada por la lectura, el cine y el
                             dibujo.
                             Encuentro inspiración en las historias que leo, en las películas que veo y en las imágenes
@@ -77,26 +84,26 @@
 
         <section id="habilidades" class="container px-4 py-5">
             <!-- Título de mi sección -->
-            <h2 class="pb-2 border-bottom">Habilidades</h2>
+            <h2 class="pb-2 border-bottom" style="color: #f1948a;">Habilidades</h2>
             <!-- Contenedor de mis cartas -->
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 
                 <div class="feature col">
                     <div
-                        class="d-inline-flex align-items-center justify-content-center text-danger-emphasis bg-gradient fs-2 py-2 px-3 rounded">
+                        class="d-inline-flex align-items-center justify-content-center bg-gradient fs-2 py-2 px-3 rounded" style="color: #f1948a;">
                         <i class="bi bi-code-square"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis my-2">Desarrollo web</h3>
-                    <p>Conocimientos en HTML y CSS.</p>
+                    <h3 class="fs-2 my-2 text-white">Desarrollo web</h3>
+                    <p style="color: aliceblue;">Conocimientos en HTML y CSS.</p>
                 </div>
 
                 <div class="feature col">
                     <div
-                        class="d-inline-flex align-items-center justify-content-center text-danger-emphasis bg-gradient fs-2 py-2 px-3 rounded">
+                        class="d-inline-flex align-items-center justify-content-center bg-gradient fs-2 py-2 px-3 rounded" style="color: #f1948a;">
                         <i class="bi bi-people"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis my-2">Trabajo en equipo</h3>
-                    <p>Tengo experiencia trabajando en equipo y he logrado excelentes resultados en proyectos
+                    <h3 class="fs-2 my-2 text-white">Trabajo en equipo</h3>
+                    <p style="color: aliceblue;"> Tengo experiencia trabajando en equipo y he logrado excelentes resultados en proyectos
                         colaborativos. Mi capacidad
                         para escuchar, comunicarme y coordinar con otros ha sido fundamental para alcanzar metas
                         comunes.</p>
@@ -104,11 +111,11 @@
 
                 <div class="feature col">
                     <div
-                        class="d-inline-flex align-items-center justify-content-center text-danger-emphasis bg-gradient fs-2 py-2 px-3 rounded">
+                        class="d-inline-flex align-items-center justify-content-center bg-gradient fs-2 py-2 px-3 rounded" style="color: #f1948a;">
                         <i class="bi bi-highlighter"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis my-2">Ilustración</h3>
-                    <p>Tengo conocimientos en Photoshop e Illustrator. Ambos programas son herramientas clave
+                    <h3 class="fs-2 my-2 text-white">Ilustración</h3>
+                    <p style="color: aliceblue;">Tengo conocimientos en Photoshop e Illustrator. Ambos programas son herramientas clave
                         en mi proceso creativo, y los utilizo con confianza para desarrollar proyectos visuales.</p>
                 </div>
 
@@ -117,27 +124,9 @@
 
 
         <section id="proyectos" class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom">Mis Proyectos</h2>
+            <h2 class="pb-2 border-bottom" style="color: #f1948a;">Mis Proyectos</h2>
 
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-
-                <div class="col">
-                    <div id="proyecto-1"
-                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de google.</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="d-flex align-items-center me-3">
-                                    <i class="bi bi-code-square"></i>
-                                    <a href="https://github.com/Lluvi376/clon-google-b7-g1" target="_blank"
-                                        class="ps-3">Código</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
 
                 <div class="col">
                     <div id="proyecto-2"
@@ -150,6 +139,24 @@
                                     <i class="bi bi-fast-forward-fill"></i>
                                     <a href="https://www.youtube.com/watch?v=o_mYe4dy24s" target="_blank"
                                         class="ps-3">Video</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="proyecto-1"
+                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de google.</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <i class="bi bi-code-square"></i>
+                                    <a href="https://github.com/Lluvi376/clon-google-b7-g1" target="_blank"
+                                        class="ps-3">Código</a>
                                 </li>
                             </ul>
                         </div>
@@ -182,12 +189,12 @@
 
 
         <section id="testimonios">
-            <h1 class="text-center my-5">Testimonios</h1>
+            <h1 class="text-center my-5" style="color: #f1948a;">Testimonios</h1>
             <div id="myCarousel" class="carousel slide carousel-dark mb-6" data-bs-theme="dark" data-bs-ride="carousel">
 
                 <div class="carousel-inner">
 
-                    <div class="carousel-item active">
+                    <div class="carousel-item active text-white">
                         <article class="container text-center">
                             <img class="rounded-4" src="assets/walt-disney.webp" height="200" alt="Walt Disney">
                             <h3 class="my-3">Walt Disney</h3>
@@ -195,7 +202,7 @@
                         </article>
                     </div>
 
-                    <div class="carousel-item">
+                    <div class="carousel-item text-white">
                         <article class="container text-center">
                             <img class="rounded-4" src="assets/leorizzi.jpg" height="200" alt="Leo Rizzi">
                             <h3 class="my-3">Leo Rizzi</h3>
@@ -203,7 +210,7 @@
                         </article>
                     </div>
 
-                    <div class="carousel-item">
+                    <div class="carousel-item text-white">
                         <article class="container text-center">
                             <img class="rounded-4" src="assets/charlotte.webp" height="200" alt="Charlotte">
                             <h3 class="my-3">Charlotte</h3>
@@ -232,9 +239,9 @@
 
     <footer id="contacto" class="bg-black py-3 mt-5" data-bs-theme="dark">
         <p class="mt-5 text-danger-emphasis text-center texto-gigante">
-            <i class="bi bi-file-code-fill"></i>
+            <i class="bi bi bi-brush-fill"></i>
         </p>
-        <h4 class="text-danger-emphasis text-center my-3">"If you can dream it, you can do it"</h4>
+        <h4 id="frase" class="text-danger-emphasis text-center my-3">"If you can dream it, you can do it"</h4>
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
 
             <li class="nav-item fs-1">
@@ -270,6 +277,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
