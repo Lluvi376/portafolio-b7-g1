@@ -67,6 +67,12 @@ p {
 #proyecto-3{
     background-image: url('assets/PortadaIlus.png');
 }
+#proyecto-4{
+    background-image: url('assets/Art.jpg');
+}
+#proyecto-5{
+    background-image: url('assets/pintura.jpg');
+}
 
 /* Esta sirve para que los textos se vean */
 .text-shadow-1 {
