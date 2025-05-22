@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+}
+h1{
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+h2{
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3{
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+h4 {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+}
+p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+#navegacion{
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+#pauseButton{
+    margin-left: 70px;
+} 
+#presentacion{
+    height: 90vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    background-image: url(assets/wallpaper5.jpg!d);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.proyecto{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#proyecto-1{
+    background-image: url('assets/logonuevo.gif');
+}
+
+#proyecto-2{
+    background-image: url('assets/amapolas.jpg');
+}
+
+#proyecto-3{
+    background-image: url('assets/ElSecretoDeLaSombra.jpg');
+}
+#proyecto-4{
+    background-image: url('assets/Art.jpg');
+}
+#proyecto-5{
+    background-image: url('assets/pintura.jpg');
+}
+
+/* Esta sirve para que los textos se vean */
+.text-shadow-1 {
+    text-shadow: -2px 0px 6px rgba(0, 0, 0, 1);
+}
+
+.texto-gigante{
+    font-size: 80px;
+}
